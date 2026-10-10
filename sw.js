@@ -2,7 +2,7 @@
 // Le code est mis en cache à l'installation ; images et polices au premier usage ; la page et le code passent d'abord
 // par le réseau pour recevoir les mises à jour. La musique (lue par plages, Range) n'est pas interceptée.
 // VERSION est remplacée à chaque publication (outils/site.sh) : le nouveau cache remplace l'ancien.
-const VERSION = '7194c91-1791673173';
+const VERSION = 'd9ffa42-1791673800';
 const CACHE = 'sk-' + VERSION, POLICES = 'sk-polices';
 const COEUR = [
   'jouer.html', 'ui.css', 'habillages.css', 'manifest.webmanifest',

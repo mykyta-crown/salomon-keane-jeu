@@ -1,0 +1,50 @@
+{
+ "genere": "2026-10-06T19:43:50.696Z",
+ "fs": 192,
+ "cols": 8,
+ "dirs": 8,
+ "K": null,
+ "hauteurs": {
+  "o_dame_bobine": 1.563123779296875
+ },
+ "directions": "ligne = animation × 8 + k ; k : 0 gauche, 1 bas-gauche, 2 bas, 3 bas-droite, 4 droite, 5 haut-droite, 6 haut, 7 haut-gauche",
+ "anims": [
+  {
+   "id": "idle",
+   "frames": 8,
+   "row0": 0,
+   "upp": 0.01319091796875,
+   "ax": 96,
+   "ay": 125.31704608550811
+  },
+  {
+   "id": "act",
+   "frames": 4,
+   "row0": 8,
+   "upp": 0.01263427734375,
+   "ax": 96,
+   "ay": 124.52173913043484
+  }
+ ],
+ "sheets": {
+  "o_dame_bobine": "o_dame_bobine.webp"
+ },
+ "hd": {
+  "fs": 384,
+  "sheets": {
+   "o_dame_bobine": {
+    "idle": "hd/o_dame_bobine-idle.webp",
+    "act": "hd/o_dame_bobine-act.webp"
+   }
+  }
+ },
+ "hdTel": {
+  "fs": 288,
+  "sheets": {
+   "o_dame_bobine": {
+    "idle": "hd/o_dame_bobine-idle-tel.webp",
+    "act": "hd/o_dame_bobine-act-tel.webp"
+   }
+  }
+ }
+}

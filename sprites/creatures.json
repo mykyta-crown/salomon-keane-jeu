@@ -1,0 +1,65 @@
+{
+ "genere": "2026-10-06T17:17:25.864Z",
+ "fs": 128,
+ "cols": 6,
+ "dirs": 8,
+ "K": null,
+ "hauteurs": {
+  "o_grimoire": 0.851627197265625,
+  "o_limon": 0.8332731628417969,
+  "o_enlumineur": 0.9250433349609375,
+  "o_pelote": 0.9433973693847656,
+  "o_chevalier": 0.9287141418457031,
+  "o_de": 0.8736520385742187,
+  "o_ronceline": 1.1819998168945312,
+  "o_bobineuse": 0.7084657287597657,
+  "o_chiffe": 0.3891055297851562,
+  "o_signet": 0.9544097900390625,
+  "o_pollen": 0.44049682617187497,
+  "o_dionee": 0.851627197265625,
+  "o_bobinemere": 1.3361737060546874
+ },
+ "directions": "ligne = animation × 8 + k ; k : 0 gauche, 1 bas-gauche, 2 bas, 3 bas-droite, 4 droite, 5 haut-droite, 6 haut, 7 haut-gauche",
+ "anims": [
+  {
+   "id": "idle",
+   "frames": 6,
+   "row0": 0,
+   "upp": 0.0146832275390625,
+   "ax": 64,
+   "ay": 87.34455667789001
+  },
+  {
+   "id": "act",
+   "frames": 4,
+   "row0": 8,
+   "upp": 0.016314697265625,
+   "ax": 64,
+   "ay": 90.93602693602693
+  }
+ ],
+ "sheets": {
+  "o_grimoire": "o_grimoire.webp",
+  "o_limon": "o_limon.webp",
+  "o_enlumineur": "o_enlumineur.webp",
+  "o_pelote": "o_pelote.webp",
+  "o_chevalier": "o_chevalier.webp",
+  "o_de": "o_de.webp",
+  "o_ronceline": "o_ronceline.webp",
+  "o_bobineuse": "o_bobineuse.webp",
+  "o_chiffe": "o_chiffe.webp",
+  "o_signet": "o_signet.webp",
+  "o_pollen": "o_pollen.webp",
+  "o_dionee": "o_dionee.webp",
+  "o_bobinemere": "o_bobinemere.webp"
+ },
+ "hd": {
+  "fs": 256,
+  "sheets": {
+   "o_bobinemere": {
+    "idle": "hd/o_bobinemere-idle.webp",
+    "act": "hd/o_bobinemere-act.webp"
+   }
+  }
+ }
+}

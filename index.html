@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Salomon Keane</title>
+<meta name="description" content="Roguelite d’action : un apprenti magicien gravit la tour de Morvelle la Tisseuse.">
+<meta name="theme-color" content="#24122b">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icones/icone-192.png">
+<link rel="apple-touch-icon" href="icones/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Salomon Keane">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@600;800&family=Alegreya+Sans:wght@500;700;800;900&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Sora:wght@600;700&family=Manrope:wght@600;700;800&family=JetBrains+Mono:wght@500&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Nunito+Sans:opsz,wght@6..12,600;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="ui.css">
+<style>
+  html, body { height: 100%; margin: 0; overflow: hidden; overscroll-behavior: none; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; background: #000; color-scheme: dark; }
+  #jeu { position: fixed; inset: 0; outline: none; }
+</style>
+</head>
+<body>
+<div id="jeu" tabindex="0"></div>
+<script src="data.js" charset="utf-8"></script>
+<script src="themes.js" charset="utf-8"></script>
+<script src="game.js" charset="utf-8"></script><script src="gardiens.js" charset="utf-8"></script><script src="bestiaire.js" charset="utf-8"></script><script src="eau.js" charset="utf-8"></script><script src="fusions.js" charset="utf-8"></script><script src="sorts2.js" charset="utf-8"></script><script src="progression.js" charset="utf-8"></script><script src="arenes.js" charset="utf-8"></script>
+<script src="render.js" charset="utf-8"></script><script src="gardiens-rendu.js" charset="utf-8"></script><script src="bestiaire-rendu.js" charset="utf-8"></script>
+<script src="hero.js" charset="utf-8"></script>
+<script src="sprites.js" charset="utf-8"></script>
+<script src="bienvenue.js" charset="utf-8"></script>
+<script src="app.js" charset="utf-8"></script>
+<script src="ambiance.js" charset="utf-8"></script>
+<script src="village.js" charset="utf-8"></script>
+<script src="installer.js" charset="utf-8"></script>
+<script>
+  // Une seule direction jouable : Gouache Héroïque (D24). Pour comparer, la bible garde les autres ;
+  // un nom de thème dans l’adresse (#velours, #vheroique…) reste possible pour l’équipe, sans bouton en jeu.
+  const h = location.hash.replace('#', '');
+  window.vkApp = new VK.App(document.getElementById('jeu'), { mode: 'play', da: VK.THEMES[h] ? h : 'gouache' });
+  document.getElementById('jeu').focus();
+</script>
+</body>
+</html>

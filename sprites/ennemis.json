@@ -1,0 +1,78 @@
+{
+ "genere": "2026-10-04T21:42:05.829Z",
+ "fs": 128,
+ "cols": 8,
+ "dirs": 8,
+ "K": null,
+ "hauteurs": {
+  "sk_mage": 2.68727783203125,
+  "sk_warrior": 2.2666058349609375,
+  "sk_minion": 1.9338354492187502,
+  "sk_ally": 1.9338354492187502,
+  "c_epouvantail": 1.8396551513671875,
+  "c_pantin": 1.695245361328125,
+  "c_souffleur": 2.0029010009765624,
+  "c_maestro": 1.9275567626953125
+ },
+ "directions": "ligne = animation × 8 + k ; k : 0 gauche, 1 bas-gauche, 2 bas, 3 bas-droite, 4 droite, 5 haut-droite, 6 haut, 7 haut-gauche",
+ "anims": [
+  {
+   "id": "walk",
+   "frames": 8,
+   "row0": 0,
+   "upp": 0.02511474609375,
+   "ax": 64,
+   "ay": 104.24496937882768
+  },
+  {
+   "id": "run",
+   "frames": 6,
+   "row0": 8,
+   "upp": 0.02722412109375,
+   "ax": 64,
+   "ay": 96.9297820823245
+  },
+  {
+   "id": "cast",
+   "frames": 4,
+   "row0": 16,
+   "upp": 0.0347607421875,
+   "ax": 64,
+   "ay": 90.5486725663717
+  },
+  {
+   "id": "hit",
+   "frames": 3,
+   "row0": 24,
+   "upp": 0.025806884765625,
+   "ax": 64,
+   "ay": 100.78160919540234
+  },
+  {
+   "id": "death",
+   "frames": 6,
+   "row0": 32,
+   "upp": 0.045252685546875,
+   "ax": 64,
+   "ay": 76.23597960670068
+  },
+  {
+   "id": "spawn",
+   "frames": 6,
+   "row0": 40,
+   "upp": 0.0315911865234375,
+   "ax": 64,
+   "ay": 104.89723526343246
+  }
+ ],
+ "sheets": {
+  "sk_mage": "sk_mage.webp",
+  "sk_warrior": "sk_warrior.webp",
+  "sk_minion": "sk_minion.webp",
+  "sk_ally": "sk_ally.webp",
+  "c_epouvantail": "c_epouvantail.webp",
+  "c_pantin": "c_pantin.webp",
+  "c_souffleur": "c_souffleur.webp",
+  "c_maestro": "c_maestro.webp"
+ }
+}

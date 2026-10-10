@@ -1,0 +1,104 @@
+{
+ "genere": "2026-10-06T20:19:34.042Z",
+ "fs": 192,
+ "cols": 8,
+ "dirs": 8,
+ "K": null,
+ "hauteurs": {
+  "g_relieur": 2.3837255859375,
+  "g_ronce": 2.3594018554687497,
+  "g_marion": 2.122245483398437,
+  "g_morvelle": 2.8276336669921873
+ },
+ "directions": "ligne = animation × 8 + k ; k : 0 gauche, 1 bas-gauche, 2 bas, 3 bas-droite, 4 droite, 5 haut-droite, 6 haut, 7 haut-gauche",
+ "anims": [
+  {
+   "id": "idle",
+   "frames": 6,
+   "row0": 0,
+   "upp": 0.0162158203125,
+   "ax": 96,
+   "ay": 161.04065040650414
+  },
+  {
+   "id": "walk",
+   "frames": 8,
+   "row0": 8,
+   "upp": 0.0162158203125,
+   "ax": 96,
+   "ay": 157.78861788617894
+  },
+  {
+   "id": "cast",
+   "frames": 4,
+   "row0": 16,
+   "upp": 0.017501220703125,
+   "ax": 96,
+   "ay": 157.77024482109235
+  },
+  {
+   "id": "hit",
+   "frames": 3,
+   "row0": 24,
+   "upp": 0.0170068359375,
+   "ax": 96,
+   "ay": 156.9819121447029
+  }
+ ],
+ "sheets": {
+  "g_relieur": "g_relieur.webp",
+  "g_ronce": "g_ronce.webp",
+  "g_marion": "g_marion.webp",
+  "g_morvelle": "g_morvelle.webp"
+ },
+ "hd": {
+  "fs": 384,
+  "sheets": {
+   "g_relieur": {
+    "idle": "hd/g_relieur-idle.webp",
+    "walk": "hd/g_relieur-walk.webp",
+    "cast": "hd/g_relieur-cast.webp",
+    "hit": "hd/g_relieur-hit.webp"
+   },
+   "g_ronce": {
+    "idle": "hd/g_ronce-idle.webp",
+    "walk": "hd/g_ronce-walk.webp",
+    "cast": "hd/g_ronce-cast.webp",
+    "hit": "hd/g_ronce-hit.webp"
+   },
+   "g_marion": {
+    "idle": "hd/g_marion-idle.webp",
+    "walk": "hd/g_marion-walk.webp",
+    "cast": "hd/g_marion-cast.webp",
+    "hit": "hd/g_marion-hit.webp"
+   },
+   "g_morvelle": {
+    "idle": "hd/g_morvelle-idle.webp",
+    "walk": "hd/g_morvelle-walk.webp",
+    "cast": "hd/g_morvelle-cast.webp",
+    "hit": "hd/g_morvelle-hit.webp"
+   }
+  }
+ },
+ "hdTel": {
+  "fs": 288,
+  "sheets": {
+   "g_relieur": {
+    "idle": "hd/g_relieur-idle-tel.webp",
+    "walk": "hd/g_relieur-walk-tel.webp"
+   },
+   "g_ronce": {
+    "idle": "hd/g_ronce-idle-tel.webp",
+    "walk": "hd/g_ronce-walk-tel.webp"
+   },
+   "g_marion": {
+    "idle": "hd/g_marion-idle-tel.webp",
+    "walk": "hd/g_marion-walk-tel.webp"
+   },
+   "g_morvelle": {
+    "idle": "hd/g_morvelle-idle-tel.webp",
+    "walk": "hd/g_morvelle-walk-tel.webp"
+   }
+  }
+ }
+}

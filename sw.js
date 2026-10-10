@@ -1,8 +1,8 @@
 // Service worker du jeu publié (installé depuis l'écran d'accueil) : le jeu se relance sans réseau.
-// Le code est mis en cache à l'installation ; images et polices au premier usage ; la page elle-même passe d'abord
+// Le code est mis en cache à l'installation ; images et polices au premier usage ; la page et le code passent d'abord
 // par le réseau pour recevoir les mises à jour. La musique (lue par plages, Range) n'est pas interceptée.
 // VERSION est remplacée à chaque publication (outils/site.sh) : le nouveau cache remplace l'ancien.
-const VERSION = '84f0752-1791653393';
+const VERSION = 'd17e731-1791653521';
 const CACHE = 'sk-' + VERSION, POLICES = 'sk-polices';
 const COEUR = [
   'jouer.html', 'ui.css', 'manifest.webmanifest',
@@ -31,14 +31,19 @@ async function premierCache(req, nom) {
   return r;
 }
 
-async function reseauDabord(req) {
+// la page et le code (js, css, json, manifeste) passent d'abord par le réseau : le jeu se met à jour dès la prochaine ouverture,
+// même dans l'appli de l'écran d'accueil que l'iPhone garde en veille. Sans réponse en 4 s (hors ligne, réseau très lent), la
+// copie gardée prend le relais ; la réponse du réseau, si elle arrive ensuite, remplace la copie pour la fois suivante.
+async function reseauDabord(req, page) {
   const c = await caches.open(CACHE);
+  const net = fetch(req).then((r) => { if (r && r.ok) c.put(req, r.clone()).catch(() => {}); return r; });
+  const garde = () => c.match(req, { ignoreSearch: true }).then((h) => h || (page ? c.match('index.html').then((x) => x || c.match('jouer.html')) : null));
   try {
-    const r = await fetch(req);
-    if (r && r.ok) c.put(req, r.clone()).catch(() => {});
-    return r;
+    const r = await Promise.race([net, new Promise((_, rej) => setTimeout(() => rej(new Error('lent')), 4000))]);
+    if (r && r.ok) return r;
+    return (await garde()) || r;
   } catch (err) {
-    return (await c.match(req, { ignoreSearch: true })) || (await c.match('index.html')) || (await c.match('jouer.html')) || Response.error();
+    return (await garde()) || net.catch(() => Response.error());
   }
 }
 
@@ -48,6 +53,7 @@ self.addEventListener('fetch', (e) => {
   const u = new URL(req.url);
   if (u.hostname === 'fonts.googleapis.com' || u.hostname === 'fonts.gstatic.com') { e.respondWith(premierCache(req, POLICES)); return; }
   if (u.origin !== self.location.origin || /\.(mp4|mp3|m4a)$/i.test(u.pathname)) return;
-  if (req.mode === 'navigate') { e.respondWith(reseauDabord(req)); return; }
-  e.respondWith(premierCache(req, CACHE));
+  if (req.mode === 'navigate') { e.respondWith(reseauDabord(req, true)); return; }
+  if (/\.(js|css|json|webmanifest|html)$/i.test(u.pathname)) { e.respondWith(reseauDabord(req, false)); return; }
+  e.respondWith(premierCache(req, CACHE));   // images : gardées (lourdes, et leur nom change rarement)
 });

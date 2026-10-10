@@ -2,12 +2,12 @@
 // Le code est mis en cache à l'installation ; images et polices au premier usage ; la page et le code passent d'abord
 // par le réseau pour recevoir les mises à jour. La musique (lue par plages, Range) n'est pas interceptée.
 // VERSION est remplacée à chaque publication (outils/site.sh) : le nouveau cache remplace l'ancien.
-const VERSION = '322e073-1791664229';
+const VERSION = 'f740aec-1791667675';
 const CACHE = 'sk-' + VERSION, POLICES = 'sk-polices';
 const COEUR = [
   'jouer.html', 'ui.css', 'habillages.css', 'manifest.webmanifest',
   'data.js', 'themes.js', 'game.js', 'gardiens.js', 'bestiaire.js', 'eau.js', 'fusions.js', 'sorts2.js', 'progression.js', 'arenes.js',
-  'render.js', 'gardiens-rendu.js', 'bestiaire-rendu.js', 'hero.js', 'sprites.js', 'enligne.js', 'bienvenue.js', 'installer.js', 'app.js', 'ambiance.js', 'village.js', 'defis.js', 'retrait.js', 'mondes.js', 'dragons.js',
+  'render.js', 'gardiens-rendu.js', 'bestiaire-rendu.js', 'hero.js', 'sprites.js', 'enligne.js', 'bienvenue.js', 'installer.js', 'app.js', 'ambiance.js', 'village.js', 'defis.js', 'retrait.js', 'mondes.js', 'dragons.js', 'rares.js',
   'sprites/sprites.json', 'sprites/ennemis.json', 'sprites/creatures.json', 'sprites/gardiens.json', 'sprites/decor.json', 'sprites/decor2.json',
   'sprites/bobine.json', 'sprites/portraits.json', 'sprites/morvelle-portraits.json', 'sprites/village.json',
   'icones/icone-192.png',

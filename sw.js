@@ -2,7 +2,7 @@
 // Le code est mis en cache à l'installation ; les images descendent ensuite, hors installation (remplir) ; la page et le code
 // passent d'abord par le réseau pour recevoir les mises à jour. La musique (lue par plages, Range) n'est pas interceptée.
 // VERSION est remplacée à chaque publication (outils/site.sh) : le nouveau cache remplace l'ancien, mais reprend ses images.
-const VERSION = 'f2cfeaf-1791712215';
+const VERSION = '13f4a5e-1792536680';
 // IMAGES : à changer seulement quand une image change de contenu sans changer de nom ; les images gardées sont alors
 // retéléchargées. Sinon, d'une publication à l'autre, seules les images nouvelles descendent.
 const IMAGES = '1';
@@ -14,6 +14,7 @@ const COEUR = [
   'sprites/sprites.json', 'sprites/ennemis.json', 'sprites/creatures.json', 'sprites/gardiens.json', 'sprites/decor.json', 'sprites/decor2.json',
   'sprites/bobine.json', 'sprites/portraits.json', 'sprites/morvelle-portraits.json', 'sprites/village.json',
   'icones/icone-192.png',
+  'sprites/monde-glace.webp', 'sprites/monde-sable.webp', 'sprites/monde-feu.webp',   // portail magique (mondes.js, habillages.css) : 42 Ko
 ];
 // images de l'accueil, du Bourg et de l'acte 1 (environ 7 Mo), descendues en premier : sans elles, une première partie
 // hors ligne se jouait sans Pépin ni créatures dessinés, et le Bourg sans son image.

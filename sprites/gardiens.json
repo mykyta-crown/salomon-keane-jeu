@@ -85,19 +85,23 @@
   "sheets": {
    "g_relieur": {
     "idle": "hd/g_relieur-idle-tel.webp",
-    "walk": "hd/g_relieur-walk-tel.webp"
+    "walk": "hd/g_relieur-walk-tel.webp",
+    "cast": "hd/g_relieur-cast-tel.webp"
    },
    "g_ronce": {
     "idle": "hd/g_ronce-idle-tel.webp",
-    "walk": "hd/g_ronce-walk-tel.webp"
+    "walk": "hd/g_ronce-walk-tel.webp",
+    "cast": "hd/g_ronce-cast-tel.webp"
    },
    "g_marion": {
     "idle": "hd/g_marion-idle-tel.webp",
-    "walk": "hd/g_marion-walk-tel.webp"
+    "walk": "hd/g_marion-walk-tel.webp",
+    "cast": "hd/g_marion-cast-tel.webp"
    },
    "g_morvelle": {
     "idle": "hd/g_morvelle-idle-tel.webp",
-    "walk": "hd/g_morvelle-walk-tel.webp"
+    "walk": "hd/g_morvelle-walk-tel.webp",
+    "cast": "hd/g_morvelle-cast-tel.webp"
    }
   }
  }

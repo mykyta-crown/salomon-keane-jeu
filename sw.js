@@ -2,7 +2,7 @@
 // Le code est mis en cache à l'installation ; les images descendent ensuite, hors installation (remplir) ; la page et le code
 // passent d'abord par le réseau pour recevoir les mises à jour. La musique (lue par plages, Range) n'est pas interceptée.
 // VERSION est remplacée à chaque publication (outils/site.sh) : le nouveau cache remplace l'ancien, mais reprend ses images.
-const VERSION = '13f4a5e-1792536680';
+const VERSION = '5903f87-1793352090';
 // IMAGES : à changer seulement quand une image change de contenu sans changer de nom ; les images gardées sont alors
 // retéléchargées. Sinon, d'une publication à l'autre, seules les images nouvelles descendent.
 const IMAGES = '1';
